@@ -2,20 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("/images/background.webp");
+  background-size: cover; /* ขยายภาพให้เต็มพื้นที่ */
+  background-position: center; /* จัดกึ่งกลางของภาพ */
+  background-repeat: no-repeat; /* ป้องกันการซ้ำของภาพ */
+  font-family: Arial, sans-serif; /* ตั้งค่า font */
+  min-height: 100vh;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input[type="number"] {
+  margin-top: 50px;
+  padding: 15px;
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  font-size: 16px;
+  text-align: center;
+  border: solid 1px #fffdd0;
 }
