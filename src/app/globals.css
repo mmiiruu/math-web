@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-image: url("/images/background.webp");
+  background-image: url("/images/background3.jpg");
   background-size: cover; /* ขยายภาพให้เต็มพื้นที่ */
   background-position: center; /* จัดกึ่งกลางของภาพ */
   background-repeat: no-repeat; /* ป้องกันการซ้ำของภาพ */
