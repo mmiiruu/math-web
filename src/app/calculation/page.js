@@ -5,7 +5,7 @@ import { useSearchParams, useRouter } from "next/navigation";
 
 export default function CalculationPage() {
   const searchParams = useSearchParams();
-  const level = searchParams.get("level"); // ดึงพารามิเตอร์ level จาก URL
+  const level = searchParams.get("level"); 
   const router = useRouter();
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [score, setScore] = useState(0);
